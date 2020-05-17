@@ -1,23 +1,8 @@
-res = []
-c1 = File.foreach([ARGV[0]) { |line| res[i] = []; tab[i] += line.chomp.split(''); i += 1}
+def facto(n)
+  if n < 1
+    return 1
+  end
+    return n * facto(n - 1) #POUR QUE LE CHIFFRE PERDE UNE UNITÉ À CHAQUE BOUCLE
+  end
 
-tab = []
-c2 = File.foreach([ARGV[1]) { |line| tab[i] = []; tab[i] += line.chomp.split(''); i += 1}
-
-y = 0  #| index de l index TAB 
-x = 0  #| index TAB 
-a = 0  #|
-b = 0  #|
-
-while x < tab.length do
-  y = 0
-   while (y < tab[x].length)
-     if res[0][0] == tab[x][y]
-        print 'ok'
-
-     end 
-     y += 1
-
-   end
-  x += 1
-end
+y     puts facto(number)
